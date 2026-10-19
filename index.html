@@ -1,24 +1,126 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Srivalsan Parameswaran</title>
-  <style>
-    body { font-family: Calibri, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; color: #222; line-height: 1.6; }
-    h1, h2 { color: #1f2a5a; }
-    a { color: #1f2a5a; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Srivalsan Parameswaran</title>
+<meta name="description" content="Software engineer and MInfoTech student at the University of Waikato. Python, SQL, full-stack web and data projects.">
+<style>
+:root{--bg:#0d1117;--card:#131a22;--line:#232c37;--text:#d7dde4;--muted:#8b96a3;--accent:#22c55e;--accent-ink:#04210f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.7 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+a{color:inherit}
+.wrap{max-width:680px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+nav .logo{color:var(--accent);font-weight:700;text-decoration:none;font-size:18px}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;font-size:14px}
+nav a{text-decoration:none}nav ul a:hover{color:var(--accent)}
+.hero{display:flex;gap:24px;justify-content:space-between;align-items:flex-start;margin-top:36px}
+h1{font-size:24px;margin:0 0 6px;color:#fff}
+.tag{color:var(--muted);margin:0 0 8px;max-width:420px}
+.loc{font-weight:700;color:#fff;margin:0 0 18px}
+.avatar{flex:none;width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,#1c2a38,#0f3a24);border:1px solid var(--line);display:grid;place-items:center;color:var(--accent);font-size:30px;font-weight:700}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;padding:6px 14px;border-radius:5px;border:1px solid var(--line);background:var(--card);text-decoration:none;font-size:14px}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:56px 0 16px}
+p{margin:0 0 12px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px}
+.card h3{margin:0 0 6px;font-size:15px;color:#fff}
+.card p{color:var(--muted);font-size:13.5px;line-height:1.55}
+.card .meta{font-size:12px;color:var(--accent);margin-top:8px}
+.card a.src{font-size:12.5px;color:var(--text)}
+.chips{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 8px;text-align:center;font-size:13px}
+.job{margin-bottom:22px}
+.job .role{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.job strong{color:#fff}.job .when{color:var(--muted);font-size:13px}
+.job .co{color:var(--accent);font-size:13px;margin-bottom:6px}
+ul.b{margin:0;padding-left:18px;color:var(--muted);font-size:13.5px}
+ul.b li{margin-bottom:6px}
+footer{margin:64px 0 40px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:20px}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.hero{flex-direction:column-reverse}nav ul{gap:12px;font-size:13px}}
+</style>
 </head>
 <body>
-  <h1>Srivalsan Parameswaran</h1>
-  <p>Software engineer completing a Master of Information Technology at the University of Waikato.</p>
+<div class="wrap">
+<nav>
+  <a class="logo" href="#top">Srivalsan P.</a>
+  <ul><li><a href="#projects">Projects</a></li><li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li></ul>
+</nav>
+
+<header class="hero" id="top">
+  <div>
+    <h1>Hi, I'm Srivalsan Parameswaran</h1>
+    <p class="tag">A software engineer who turns what people need into clear, checked software.</p>
+    <p class="loc">Hamilton, New Zealand</p>
+    <div class="btns">
+      <a class="btn primary" href="resume.pdf">Resume</a>
+      <a class="btn" href="https://github.com/Srivalsan99">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/srivalsan-p-013782195">LinkedIn</a>
+    </div>
+  </div>
+  <div class="avatar" aria-hidden="true">SP</div>
+</header>
+
+<section id="about">
+  <h2>About me</h2>
+  <p>I'm a software engineer with over three years of experience in Python, SQL and full-stack development. At Saama Technologies I worked on a system that checks clinical trial data against clear rules before it goes to regulators.</p>
+  <p>I'm now completing a Master of Information Technology at the University of Waikato. I enjoy work where results need to be checked, explained and trusted, and I'm learning more about applied AI.</p>
+</section>
+
+<section id="projects">
   <h2>Projects</h2>
-  <ul>
-    <li><a href="https://github.com/Srivalsan99/Avocados-Price-Prediction">Avocado Price Prediction</a>: comparing prediction methods in Python.</li>
-    <li><a href="https://github.com/Srivalsan99/heart-disease-">Heart Disease Classification</a>: comparing five methods, 85% correct on test data.</li>
-  </ul>
-  <h2>Contact</h2>
-  <p><a href="https://www.linkedin.com/in/srivalsan-p-013782195">LinkedIn</a></p>
+  <div class="grid">
+    <div class="card"><h3>Avocado Price Prediction</h3><p>Cleaned messy sales data and compared several prediction methods. The best one explained 83% of price changes on data it had not seen.</p><div class="meta">Python · pandas · scikit-learn</div><p style="margin:8px 0 0"><a class="src" href="https://github.com/Srivalsan99/Avocados-Price-Prediction">View code →</a></p></div>
+    <div class="card"><h3>Heart Disease Classification</h3><p>Compared five methods for predicting heart disease and measured how often each was right. The best was 85% correct on test data.</p><div class="meta">Python · scikit-learn</div><p style="margin:8px 0 0"><a class="src" href="https://github.com/Srivalsan99/heart-disease-">View code →</a></p></div>
+    <div class="card"><h3>Sentry Scan (team project)</h3><p>App that scores suspicious emails and links using simple, explainable rules. I built the alert for high-risk results and the database backup copies.</p><div class="meta">Team project · rule-based checks</div><p style="margin:8px 0 0"><a class="src" href="https://github.com/DiviyaS823/Sentry-Scan">View code →</a></p></div>
+    <div class="card"><h3>Blogging Platform</h3><p>A complete website with a text editor for writing posts, a layout that works on phones, and APIs that connect its pages.</p><div class="meta">Node.js · MySQL · REST APIs</div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Technologies</h2>
+  <div class="chips">
+    <div class="chip">Python</div><div class="chip">SQL</div><div class="chip">JavaScript</div><div class="chip">Node.js</div>
+    <div class="chip">React</div><div class="chip">PostgreSQL</div><div class="chip">MySQL</div><div class="chip">pandas</div>
+    <div class="chip">scikit-learn</div><div class="chip">REST APIs</div><div class="chip">Git &amp; GitHub</div><div class="chip">AWS (SNS)</div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="job">
+    <div class="role"><strong>Associate Software Engineer</strong><span class="when">Mar 2022 – Oct 2025</span></div>
+    <div class="co">Saama Technologies (India) Pvt Ltd</div>
+    <ul class="b">
+      <li>Wrote the rules a data-checking system uses to spot errors in clinical trial data, handling sensitive, regulated data.</li>
+      <li>Led readiness analysis across 30+ studies and moved 25+ of them to a newer platform, checking the data after each move.</li>
+      <li>Built a reusable template so new studies could be set up from a simple settings file, cutting setup effort by about 60% (Shining Star Award).</li>
+      <li>Worked with business stakeholders and an Agile team, fixing bugs in the backend and React frontend.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="role"><strong>Master of Information Technology</strong><span class="when">2025 – 2027 (expected)</span></div>
+    <div class="co">University of Waikato</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Let's connect</h2>
+  <p>I'm looking for projects and internships in software and applied AI. The quickest way to reach me is by email or LinkedIn.</p>
+  <div class="btns">
+    <a class="btn primary" href="mailto:srivalsan1999@gmail.com">Email me</a>
+    <a class="btn" href="https://www.linkedin.com/in/srivalsan-p-013782195">LinkedIn</a>
+    <a class="btn" href="https://github.com/Srivalsan99">GitHub</a>
+  </div>
+</section>
+
+<footer>© <span id="y"></span> Srivalsan Parameswaran</footer>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>

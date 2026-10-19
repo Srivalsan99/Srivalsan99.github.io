@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Srivalsan Parameswaran</title>
+<meta name="description" content="Software engineer and MInfoTech student at the University of Waikato.">
+<style>
+:root{--bg:#121212;--panel:#1b1b1c;--card:#202022;--line:#2e2e31;--text:#e9e9ea;--muted:#a6a6ab;--accent:#f5c451}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.7 "Poppins",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;padding:60px 20px}
+.layout{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:276px 1fr;gap:24px;align-items:start}
+.side,.main{background:var(--panel);border:1px solid var(--line);border-radius:20px}
+.side{padding:32px 24px;text-align:center;position:sticky;top:24px}
+.avatar{width:120px;height:120px;border-radius:30px;margin:0 auto 18px;background:linear-gradient(135deg,#2a2a2d,#3a3320);display:grid;place-items:center;font-size:38px;font-weight:600;color:var(--accent)}
+.side h1{font-size:19px;font-weight:500;margin:0 0 10px}
+.pill{display:inline-block;background:var(--card);border-radius:8px;padding:3px 14px;font-size:12px;color:var(--muted)}
+.info{border-top:1px solid var(--line);margin-top:24px;padding-top:20px;text-align:left}
+.info div{display:flex;gap:14px;align-items:center;margin-bottom:18px}
+.ico{flex:none;width:40px;height:40px;border-radius:10px;background:var(--card);display:grid;place-items:center;color:var(--accent);font-size:13px}
+.info small{display:block;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.info a,.info span.v{font-size:13px;text-decoration:none;word-break:break-word;color:var(--text)}.info a:hover{color:var(--accent)}
+.main{position:relative;padding:32px}
+.tabs{position:absolute;top:0;right:0;display:flex;gap:28px;padding:20px 32px;background:var(--card);border-radius:0 20px 0 20px;border-left:1px solid var(--line);border-bottom:1px solid var(--line)}
+.tabs button{all:unset;cursor:pointer;color:var(--text);font-size:14px}
+.tabs button:hover,.tabs button.on{color:var(--accent)}
+.tabs button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+h2{font-size:28px;font-weight:600;margin:0 0 22px;position:relative;padding-bottom:12px}
+h2::after{content:"";position:absolute;left:0;bottom:0;width:30px;height:4px;border-radius:2px;background:var(--accent)}
+h3{font-size:20px;font-weight:500;margin:34px 0 16px}
+p{margin:0 0 14px;color:#cfcfd3;font-size:14.5px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h4{margin:0 0 6px;font-size:16px;font-weight:500}
+.card p{font-size:13.5px;color:var(--muted);margin:0}
+.card .m{margin-top:10px;font-size:12px;color:var(--accent)}
+.card a{font-size:13px;color:var(--text)}
+.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:22px}
+.tl .it{position:relative;margin-bottom:24px}
+.tl .it::before{content:"";position:absolute;left:-29px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.tl h4{margin:0;font-weight:500;font-size:16px}
+.tl .w{color:var(--accent);font-size:13px;margin:2px 0 6px}
+.tl ul{margin:0;padding-left:18px;color:var(--muted);font-size:13.5px}
+.tl li{margin-bottom:6px}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skills span{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 14px;font-size:13px}
+.btn{display:inline-block;margin:6px 10px 0 0;padding:10px 20px;border-radius:12px;background:var(--card);border:1px solid var(--line);text-decoration:none;font-size:14px}
+.btn:hover{border-color:var(--accent)}
+.btn.p{background:var(--accent);border-color:var(--accent);color:#2a1f00;font-weight:600}
+section{display:none}section.on{display:block}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.side{position:static}.tabs{position:static;border-radius:14px;margin-bottom:24px;justify-content:space-between;padding:14px 20px;gap:10px}.main{padding:24px}.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="side">
+    <div class="avatar" aria-hidden="true">SP</div>
+    <h1>Srivalsan Parameswaran</h1>
+    <span class="pill">Software Engineer</span>
+    <div class="info">
+      <div><span class="ico">✉</span><p style="margin:0"><small>Email</small><a href="mailto:srivalsan1999@gmail.com">srivalsan1999@gmail.com</a></p></div>
+      <div><span class="ico">⌖</span><p style="margin:0"><small>Location</small><span class="v">Hamilton, New Zealand</span></p></div>
+      <div><span class="ico">in</span><p style="margin:0"><small>LinkedIn</small><a href="https://www.linkedin.com/in/srivalsan-p-013782195">srivalsan-p-013782195</a></p></div>
+      <div><span class="ico">&lt;/&gt;</span><p style="margin:0"><small>GitHub</small><a href="https://github.com/Srivalsan99">Srivalsan99</a></p></div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <nav class="tabs" aria-label="Sections">
+      <button data-t="about" class="on">About</button><button data-t="resume">Resume</button><button data-t="portfolio">Portfolio</button><button data-t="contact">Contact</button>
+    </nav>
+
+    <section id="about" class="on">
+      <h2>About Me</h2>
+      <p>I'm Srivalsan, a software engineer with over three years of experience in Python, SQL and full-stack development. At Saama Technologies I worked on a system that checks clinical trial data against clear rules before it goes to regulators.</p>
+      <p>I'm now completing a Master of Information Technology at the University of Waikato. I enjoy work where results need to be checked, explained and trusted, and I'm building my skills in applied AI.</p>
+      <h3>What I'm doing</h3>
+      <div class="cards">
+        <div class="card"><h4>Data checking</h4><p>Turning what specialists need into clear rules that check data and show what failed.</p></div>
+        <div class="card"><h4>Full-stack web</h4><p>Websites with a database, APIs and a front end that works on phones.</p></div>
+        <div class="card"><h4>Data analysis</h4><p>Cleaning data and comparing prediction methods in Python.</p></div>
+        <div class="card"><h4>Applied AI</h4><p>Learning to use AI services in small, reviewed workflows.</p></div>
+      </div>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <h3 style="margin-top:0">Experience</h3>
+      <div class="tl">
+        <div class="it"><h4>Associate Software Engineer, Saama Technologies</h4><div class="w">Mar 2022 – Oct 2025</div>
+          <ul><li>Wrote rules to check clinical trial data, handling sensitive, regulated data.</li><li>Led readiness analysis across 30+ studies and moved 25+ to a newer platform, checking the data after each move.</li><li>Built a reusable template driven by a settings file, cutting setup effort by about 60% (Shining Star Award).</li><li>Worked with business stakeholders and an Agile team, fixing backend and React frontend bugs.</li></ul></div>
+      </div>
+      <h3>Education</h3>
+      <div class="tl">
+        <div class="it"><h4>Master of Information Technology, University of Waikato</h4><div class="w">Nov 2025 – Mar 2027 (expected)</div></div>
+        <div class="it"><h4>PG Certificate, Data Science &amp; Engineering, Great Learning</h4><div class="w">Nov 2020 – Nov 2021</div></div>
+        <div class="it"><h4>Bachelor of Engineering (Mechanical), Panimalar Institute of Technology</h4><div class="w">Apr 2016 – Jun 2020</div></div>
+      </div>
+      <h3>Skills</h3>
+      <div class="skills"><span>Python</span><span>SQL</span><span>JavaScript</span><span>Node.js</span><span>React</span><span>PostgreSQL</span><span>MySQL</span><span>pandas</span><span>scikit-learn</span><span>REST APIs</span><span>Git &amp; GitHub</span><span>AWS (SNS)</span></div>
+      <p style="margin-top:22px"><a class="btn p" href="resume.pdf">Download resume</a></p>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="cards">
+        <div class="card"><h4>Avocado Price Prediction</h4><p>Compared several prediction methods. The best explained 83% of price changes on data it had not seen.</p><div class="m">Python · pandas · scikit-learn</div><p style="margin-top:8px"><a href="https://github.com/Srivalsan99/Avocados-Price-Prediction">View code →</a></p></div>
+        <div class="card"><h4>Heart Disease Classification</h4><p>Compared five methods and measured how often each was right. Best result: 85% correct on test data.</p><div class="m">Python · scikit-learn</div><p style="margin-top:8px"><a href="https://github.com/Srivalsan99/heart-disease-">View code →</a></p></div>
+        <div class="card"><h4>Sentry Scan (team project)</h4><p>Scores suspicious emails and links with simple, explainable rules. I built the high-risk alert and database backup copies.</p><div class="m">Team project · rule-based checks</div><p style="margin-top:8px"><a href="https://github.com/DiviyaS823/Sentry-Scan">View code →</a></p></div>
+        <div class="card"><h4>Blogging Platform</h4><p>A complete website with a text editor, a phone-friendly layout and APIs connecting its pages.</p><div class="m">Node.js · MySQL · REST APIs</div></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>I'm looking for projects and internships in software and applied AI. The quickest way to reach me is by email or LinkedIn.</p>
+      <a class="btn p" href="mailto:srivalsan1999@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/srivalsan-p-013782195">LinkedIn</a><a class="btn" href="https://github.com/Srivalsan99">GitHub</a>
+    </section>
+  </main>
+</div>
+<script>
+(function(){
+  var btns=document.querySelectorAll('.tabs button'),secs=document.querySelectorAll('section');
+  function show(id){secs.forEach(function(s){s.classList.toggle('on',s.id===id)});btns.forEach(function(b){b.classList.toggle('on',b.dataset.t===id)});}
+  btns.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.t);try{history.replaceState(null,'','#'+b.dataset.t)}catch(e){}})});
+  var h=location.hash.slice(1);if(h&&document.getElementById(h))show(h);
+})();
+</script>
+</body>
+</html>
